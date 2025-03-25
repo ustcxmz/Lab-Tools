@@ -5,3 +5,8 @@ which incorperates:
 2. Mean & Std & Uncertainty calculator
 3. Relative error calculator
 4. to be continued
+Some packages in python are required:
+1. numpy
+2. pandas
+3. matplotlib
+4. seaborn
