@@ -11,3 +11,5 @@ Some packages in python are required:
 2. pandas
 3. matplotlib
 4. seaborn
+5. scipy
+6. sklearn
