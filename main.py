@@ -1,15 +1,19 @@
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-import scipy.stats as stats
 from linearreg import linear_reg
 from mean_std_uncertainty import mean_std_uncertainty
 from relative_error import relative_err
+from polynomial_reg import polynomial_reg
 
 choice = 0
 print("Welcome to the lab helper!")
-q = "What do you want to do?\n1. mean & std & uncertainty\n2. linear regression\n3. relative error\n4. exit\n"
+q = (
+    "What do you want to do?\n"
+    "1. mean & std & uncertainty\n"
+    "2. linear regression\n"
+    "3. polynomial regression\n"
+    "4. relative error\n"
+    "5. exit\n"
+    "Enter your choice:\n"
+)
 while True:
     choice = int(input(q))
     if choice == 1:
@@ -17,8 +21,10 @@ while True:
     elif choice == 2:
         linear_reg()
     elif choice == 3:
-        relative_err()
+        polynomial_reg()
     elif choice == 4:
+        relative_err()
+    elif choice == 5:
         break
     else:
         print("Invalid input!")
